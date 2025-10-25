@@ -16,5 +16,5 @@ phases:
       - docker push 312669614823.dkr.ecr.us-east-1.amazonaws.com/braintasks-app:latest
       - aws eks update-kubeconfig --region us-east-1 --name brainapp-cluster
       - export KUBECONFIG=/root/.kube/config
-      - kubectl apply -f deployment.yaml --validate=false
+      - kubectl apply -f k8s/deployment.yaml --validate=false
       - kubectl apply -f service.yaml
