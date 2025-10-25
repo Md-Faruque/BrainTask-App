@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: brainapp-deployment
   labels:
-    app: brain-app
+    app: brainapp
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: brain-app
+      app: brainapp
   template:
     metadata:
       labels:
-        app: brain-app
+        app: brainapp
     spec:
       containers:
         - name: brinappc
