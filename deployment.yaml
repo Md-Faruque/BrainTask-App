@@ -19,3 +19,4 @@ spec:
           image: 312669614823.dkr.ecr.us-east-1.amazonaws.com/braintasks-app:latest
           ports:
             - containerPort: 80
+
