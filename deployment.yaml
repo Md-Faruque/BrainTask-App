@@ -15,7 +15,7 @@ spec:
         app: brain-app
     spec:
       containers:
-        - name: myapp-container
-          image: 327568102787.dkr.ecr.ap-south-1.amazonaws.com/braintask-app:latest
+        - name: brinappc
+          image: 312669614823.dkr.ecr.us-east-1.amazonaws.com/braintasks-app:latest
           ports:
             - containerPort: 80
