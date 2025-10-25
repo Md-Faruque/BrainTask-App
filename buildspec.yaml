@@ -17,4 +17,4 @@ phases:
       - aws eks update-kubeconfig --region us-east-1 --name brainapp-cluster
       - export KUBECONFIG=/root/.kube/config
       - kubectl apply -f k8s/deployment.yaml || true
-      - kubectl apply -f k8s/service.yaml || { echo "❌ Service failed"; exit 1; }
+      - kubectl apply -f service.yaml
